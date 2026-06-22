@@ -1,3 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+[build.environment]
+  VITE_SUPABASE_URL = "https://qytmlumlpmgmjvsvdvhm.supabase.co"
+  VITE_SUPABASE_KEY = "sb_publishable_jKMMGiiMS1HuboDRMTHLYA_zggUPN54"
