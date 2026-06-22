@@ -1,0 +1,31 @@
+.card    { background: var(--card); border: 1px solid var(--border); border-radius: 13px; padding: 20px; }
+.heading { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+.grid    { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+
+.field {}
+.label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
+.input {
+  width: 100%;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color .2s;
+}
+.input:focus { border-color: var(--blue); }
+
+.saveBtn {
+  width: 100%; margin-top: 13px;
+  background: var(--blue); color: #fff; border: none;
+  padding: 10px; border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  transition: background .15s, transform .1s;
+}
+.saveBtn:hover  { background: #2563eb; }
+.saveBtn:active { transform: scale(.98); }
+
+.log     { margin-top: 12px; max-height: 72px; overflow-y: auto; border-top: 1px solid var(--border); padding-top: 8px; }
+.logItem { font-size: 10px; color: #f87171; padding: 2px 0; border-bottom: 1px solid rgba(239,68,68,.1); }

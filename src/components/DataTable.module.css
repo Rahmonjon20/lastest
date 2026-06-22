@@ -1,0 +1,18 @@
+.card    { background: var(--card); border: 1px solid var(--border); border-radius: 13px; overflow: hidden; }
+.heading { font-size: 13px; font-weight: 600; padding: 18px 20px 0; margin-bottom: 12px; }
+.scroll  { overflow-x: auto; }
+
+.table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.table thead th {
+  text-align: left; padding: 9px 14px;
+  font-size: 10px; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--muted); border-bottom: 1px solid var(--border);
+  background: var(--card2);
+}
+.table tbody td { padding: 9px 14px; border-bottom: 1px solid rgba(37,58,82,.5); color: #cbd5e1; }
+.table tbody tr:hover td { background: rgba(255,255,255,.02); }
+.table tbody tr:last-child td { border-bottom: none; }
+
+.badge { padding: 2px 8px; border-radius: 20px; font-size: 9px; font-weight: 700; letter-spacing: .06em; }
+.on  { background: rgba(16,185,129,.18); color: #34d399; }
+.off { background: rgba(99,122,147,.18); color: var(--muted); }

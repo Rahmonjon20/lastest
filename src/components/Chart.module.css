@@ -1,0 +1,4 @@
+.card    { background: var(--card); border: 1px solid var(--border); border-radius: 13px; padding: 20px; }
+.heading { font-size: 13px; font-weight: 600; margin-bottom: 14px; }
+.wrap    { position: relative; height: 240px; }
+.empty   { font-size: 13px; color: var(--muted); text-align: center; padding: 40px 0; }

@@ -1,0 +1,51 @@
+.card    { background: var(--card); border: 1px solid var(--border); border-radius: 13px; padding: 20px; }
+.heading { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+.body    { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+
+.ring {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  border: 3px solid #374151;
+  display: flex; align-items: center; justify-content: center;
+  transition: .4s;
+}
+.on  { border-color: var(--green); box-shadow: 0 0 22px rgba(16,185,129,.3); }
+.off { border-color: #374151; }
+.ringIcon { font-size: 26px; }
+
+.state { font-size: 14px; font-weight: 700; letter-spacing: .05em; transition: .3s; }
+.stateOn  { color: var(--green); }
+.stateOff { color: var(--muted); }
+
+.toggleRow { display: flex; align-items: center; gap: 13px; }
+.toggleLbl { font-size: 12px; color: var(--muted); }
+
+/* Toggle switch */
+.toggle { position: relative; width: 58px; height: 30px; cursor: pointer; }
+.toggle input { display: none; }
+.slider {
+  position: absolute; inset: 0;
+  background: #1f2937;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  transition: .3s;
+}
+.slider::before {
+  content: '';
+  position: absolute;
+  width: 22px; height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px; left: 3px;
+  transition: .3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+.toggle input:checked ~ .slider           { background: var(--green); border-color: var(--green); }
+.toggle input:checked ~ .slider::before   { transform: translateX(28px); }
+
+.pending {
+  font-size: 11px;
+  color: var(--amber);
+  animation: blink 1s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
